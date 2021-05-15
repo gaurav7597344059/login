@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log In page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Login Page</h1>
+	<form>
+		<label for="email">Email</label>
+		<input type="email" name="email" id="email" maxlength="50" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" title="Please enter a proper email address." required>
+		<br>
+		<label for="pwd">Password</label>
+		<input type="Password" name="pwd" id="pwd" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password must contain at least one number and at least one uppercase and lowercase letter, and at least 8 or more characters." required>
+		<br>
+		<br>
+		<input type="submit" value="Submit">
+	</form>
+	
+
+</body>
+</html>
